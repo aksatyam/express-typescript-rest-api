@@ -11,7 +11,7 @@ app.use(morgan("tiny"));
 app.use(express.static("public"));
 
 app.use(
-    "/docs",
+    "/docs/api/v1",
     swaggerUi.serve,
     swaggerUi.setup(undefined, {
         swaggerOptions: {
